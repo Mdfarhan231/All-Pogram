@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main(){
+int grade[11];
+int i,sum=0,avg;
+for(i=1;i<11;i++){
+    printf("Enter person %d's grade: ",i);
+    scanf("%d",&grade[i]);
+    
+    if(grade[i]>100){
+        
+        printf("the highest grade possible is 100\n");
+        printf("Enter correct grade:100\n");
+    }
+      sum=sum+grade[i];
+        
+    }
+    avg=sum/10;
+    printf("The average score is:%d",avg);
+    
+    
+}
